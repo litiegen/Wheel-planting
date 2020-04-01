@@ -3,25 +3,24 @@ var $wheel=(function(){
     var timer;
     var isMoving = false;
     function show(){
-        var inbox=`
-        <div class="slider" id="slider">
-            <div class="slide"><img src="img/b5.png" alt=""></div>
-            <div class="slide"><img src="img/b1.png" alt=""></div>
-            <div class="slide"><img src="img/b2.png" alt=""></div>
-            <div class="slide"><img src="img/b3.png" alt=""></div>
-            <div class="slide"><img src="img/b4.png" alt=""></div>
-            <div class="slide"><img src="img/b5.png" alt=""></div>
-            <div class="slide"><img src="img/b1.png" alt=""></div>
-        </div>
-        <span id="left"><</span>
-        <span id="right">></span>
-        <ul class="nav" id="navs">
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>`
+        var inbox='<div class="slider" id="slider">'
+            +'<div class="slide"><img src="img/b5.png" alt=""></div>'
+            +'<div class="slide"><img src="img/b1.png" alt=""></div>'
+            +'<div class="slide"><img src="img/b2.png" alt=""></div>'
+            +'<div class="slide"><img src="img/b3.png" alt=""></div>'
+            +'<div class="slide"><img src="img/b4.png" alt=""></div>'
+            +'<div class="slide"><img src="img/b5.png" alt=""></div>'
+            +'<div class="slide"><img src="img/b1.png" alt=""></div>'
+        +'</div>'
+        +'<span id="left"><</span>'
+        +'<span id="right">></span>'
+        +'<ul class="nav" id="navs">'
+            +'<li class="active">1</li>'
+            +'<li>2</li>'
+            +'<li>3</li>'
+            +'<li>4</li>'
+            +'<li>5</li>'
+        +'</ul>'
         var $box=$("#box");
         $box.append(inbox);
         $box.mouseover(function(){
